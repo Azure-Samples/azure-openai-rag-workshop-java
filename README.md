@@ -63,10 +63,18 @@ azd up
 
 This commands will first ask you to log in into Azure. Then it will provison the Azure resources, package the services and deploy them to Azure.
 
+### Clean up
+
+To clean up all the Azure resources created by this sample:
+
+1. Run `azd down --purge`
+2. When asked if you are sure you want to continue, enter `y`
+
+The resource group and all the resources will be deleted.
+
 ## Other versions
 
-This sample and workshop also exists in different versions:
-
+This sample and workshop exists in different versions:
 - [**Node.js + Azure AI Search**](https://aka.ms/ws/openai-rag)
 - [**Node.js + Qdrant**](https://aka.ms/ws/openai-rag-qdrant)
 - [**Java/Quarkus + Qdrant**](https://aka.ms/ws/openai-rag-quarkus).
