@@ -31,14 +31,18 @@ Here's the architecture of the application:
 
 ## Run the sample
 
-You can use [GitHub Codespaces](https://github.com/features/codespaces) to work on this project directly from your browser: [![Open in GitHub Codespaces](https://img.shields.io/badge/Codespaces-Open-blue?style=flat-square&logo=github)](https://codespaces.new/Azure-Samples/azure-openai-rag-workshop-java?hide_repo_select=true&ref=main&quickstart=true)
+You can use [GitHub Codespaces](https://github.com/features/codespaces) to work on this project directly from your browser:
 
-You can also use [Docker](https://www.docker.com/products/docker-desktop) and the [Dev Containers extension for VS Code](https://aka.ms/vscode/ext/devcontainer) to work locally using a ready-to-use dev environment: [![Open in Dev Containers](https://img.shields.io/static/v1?style=flat-square&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/Azure-Samples/azure-openai-rag-workshop-java)
+[![Open in GitHub Codespaces](https://img.shields.io/badge/Codespaces-Open-blue?style=flat-square&logo=github)](https://codespaces.new/Azure-Samples/azure-openai-rag-workshop-java?hide_repo_select=true&ref=main&quickstart=true)
+
+You can also use [Docker](https://www.docker.com/products/docker-desktop) and the [Dev Containers extension for VS Code](https://aka.ms/vscode/ext/devcontainer) to work locally using a ready-to-use dev environment:
+
+[![Open in Dev Containers](https://img.shields.io/static/v1?style=flat-square&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/Azure-Samples/azure-openai-rag-workshop-java)
 
 If you prefer to install all the tools locally, you can follow these [setup instructions](https://aka.ms/ws?src=gh%3AAzure-Samples%2Fazure-openai-rag-workshop-java%2Fdocs%2Fworkshop-java-quarkus.md&step=2#optional-working-locally-without-the-dev-container).
 
 > [!TIP]
-> You can test this application locally without any cost using [Ollama](https://ollama.com/). Follow the instructions above to setup the tools locally to get started.
+> You can run this sample entirely locally without any cost using [Ollama](https://ollama.com/). Follow the instructions above to setup the tools locally to get started.
 
 ### Azure prerequisites
 
