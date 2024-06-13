@@ -145,6 +145,7 @@ module backendApi './core/host/container-app.bicep' = {
     containerAppsEnvironmentName: containerApps.outputs.environmentName
     containerRegistryName: containerApps.outputs.registryName
     identityName: backendApiIdentityName
+    allowedOrigins: [frontend.outputs.uri]
     containerCpuCoreCount: '1.0'
     containerMemory: '2.0Gi'
     secrets: {
