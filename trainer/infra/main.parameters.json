@@ -15,7 +15,7 @@
       "value": "${AZURE_PRINCIPAL_ID}"
     },
     "openAiLocation": {
-      "value": "${AZURE_OPENAI_LOCATION=eastus2}"
+      "value": "${AZURE_OPENAI_LOCATION=swedencentral}"
     },
     "openAiCapacity": {
       "value": "${AZURE_OPENAI_CAPACITY=300}"
