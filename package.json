@@ -1,5 +1,5 @@
 {
-  "name": "azure-openai-rag-workshop",
+  "name": "azure-openai-rag-workshop-java",
   "version": "1.0.0",
   "description": "Create your own ChatGPT with Retrieval-Augmented-Generation",
   "private": true,
@@ -20,19 +20,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Azure-Samples/azure-openai-rag-workshop.git"
+    "url": "https://github.com/Azure-Samples/azure-openai-rag-workshop-java.git"
   },
-  "homepage": "https://github.com/Azure-Samples/azure-openai-rag-workshop",
+  "homepage": "https://github.com/Azure-Samples/azure-openai-rag-workshop-java",
   "bugs": {
-    "url": "https://github.com/Azure-Samples/azure-openai-rag-workshop/issues"
+    "url": "https://github.com/Azure-Samples/azure-openai-rag-workshop-java/issues"
   },
   "keywords": [],
   "author": "Microsoft",
   "license": "MIT",
   "workspaces": [
-    "src/ingestion",
-    "src/backend",
-    "src/frontend"
+    "src/frontend",
+    "trainer"
   ],
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.7.0",
