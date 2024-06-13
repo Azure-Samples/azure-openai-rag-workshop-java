@@ -11,7 +11,7 @@ This frontend is built as a Single Page Application (SPA), which is similar to t
 To get the frontend, run this command in the terminal **at the root of the project** to get the completed code directly, so you don't have to code it yourself:
 
 ```bash
-curl -fsSL https://github.com/Azure-Samples/azure-openai-rag-workshop/releases/download/latest/frontend.tar.gz | tar -xvz
+curl -fsSL https://github.com/Azure-Samples/azure-openai-rag-workshop-java/releases/download/latest/frontend.tar.gz | tar -xvz
 ```
 
 As you can see, the project is available in the `src/frontend` folder. From the project directory, you can run this command to start the development server:

@@ -34,7 +34,7 @@ This project is structured as monorepo, all packages source code is located unde
 
 Here's the architecture of the application:
 
-![Architecture diagram](https://github.com/Azure-Samples/azure-openai-rag-workshop/blob/main/docs/assets/architecture.png)
+![Architecture diagram](https://github.com/Azure-Samples/azure-openai-rag-workshop-java/blob/main/docs/assets/architecture.png)
 
 ## How deploy to Azure
 
