@@ -4,9 +4,11 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  docs:
     name: Build docs
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -22,4 +24,5 @@ jobs:
           git config --global user.email "noda@free.fr"
           ./scripts/repo/build-docs.sh
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
