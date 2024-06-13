@@ -30,10 +30,10 @@
       "value": "${INDEX_NAME=kbindex}"
     },
     "useQdrant": {
-      "value": "${USE_QDRANT=false}"
+      "value": "${USE_QDRANT=true}"
     },
     "qdrantPort": {
-      "value": "${QDRANT_PORT=6333}"
+      "value": "${QDRANT_PORT=6334}"
     },
     "isContinuousDeployment": {
       "value": "${CI=false}"
