@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
 
-name: azure-openai-rag-workshop
+name: azure-openai-rag-workshop-java
 metadata:
-  template: azure-openai-rag-workshop@1.0.0
+  template: azure-openai-rag-workshop-java@1.0.0
 
 services:
   frontend:
@@ -25,14 +25,14 @@ services:
 
   backend:
     project: ./src/backend
-    language: ts
+    language: java
     host: containerapp
     docker:
       context: ../..
 
   ingestion:
     project: ./src/ingestion
-    language: ts
+    language: java
     host: containerapp
     docker:
       context: ../..

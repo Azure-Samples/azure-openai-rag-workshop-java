@@ -45,6 +45,8 @@ Next, set up a new environment. The Azure Developer CLI uses environments to man
 
 ```sh
 azd env new openai-rag-workshop
+azd env set USE_QDRANT true
+azd env set QDRANT_PORT 6334
 ```
 
 <div data-visible="$$proxy$$">
@@ -86,19 +88,15 @@ This will create a `.env` file at the root of your repository, containing the en
 
 As this file may sometimes contains application secrets, it's a best practice to keep it safe and not commit it to your repository. We already added it to the `.gitignore` file, so you don't have to worry about it.
 
-### Deploying the ingestion service
+At this stage, if you go to the Azure Portal at https://portal.azure.com you should see something similar to this:
 
-Once your infrastructure is deployed, you can immediately deploy the ingestion service so we can some gain time later. We'll explore the ingestion service in more detail later in the workshop.
-
-```sh
-azd deploy ingestion
-```
+![Resource deployed on Azure](./assets/azure-portal-azd.png)
 
 ### Introducing Azure services
 
 In our journey to deploy the chat application, we'll be utilizing a suite of Azure services, each playing a crucial role in the application's architecture and performance.
 
-![Application architecture](./assets/azure-architecture.png)
+![Application architecture](./assets/azure-architecture-generic-db.png)
 
 Here's a brief overview of the Azure services we'll use:
 

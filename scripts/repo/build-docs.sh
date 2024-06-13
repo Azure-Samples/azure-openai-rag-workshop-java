@@ -21,10 +21,8 @@ cd "$DOCS_HOME"
 
 # Build docs
 cd docs
-moaw build _workshop-qdrant.md -d workshop-qdrant.md
-moaw build _workshop-aisearch.md -d workshop-aisearch.md
-moaw build _workshop-aisearch.md -d workshop.md
 moaw build _workshop-java-quarkus.md -d workshop-java-quarkus.md
+moaw build _workshop-java-quarkus.md -d workshop.md
 
 if [[ ${1-} == "--local" ]]; then
   echo "Local mode: skipping GitHub push."

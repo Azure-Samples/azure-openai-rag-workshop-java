@@ -1,6 +1,13 @@
 ## Deploying to Azure
 
-Our application is now ready to be deployed to Azure!
+Our application is now ready to be deployed to Azure! But first of all, make sure you don't deploy the application with the llama3 model. For that, make sure to remove or comment the alternative from the `src/backend/src/main/resources/application.properties` file.
+
+```properties
+quarkus.http.port=3000
+quarkus.log.level=INFO
+quarkus.log.category."ai.azure.openai.rag.workshop.backend".level=DEBUG
+#quarkus.arc.selected-alternatives=ai.azure.openai.rag.workshop.backend.configuration.ChatLanguageModelOllamaProducer
+```
 
 We'll use [Azure Static Web Apps](https://learn.microsoft.com/azure/static-web-apps/overview) to deploy the frontend, and [Azure Container Apps](https://learn.microsoft.com/azure/container-apps/overview) to deploy the backend and ingestion services.
 

@@ -5,21 +5,19 @@ The project template you've forked is a monorepo, which means it's a single repo
 ```sh
 .devcontainer/  # Configuration for the development container
 data/           # Sample PDFs to serve as custom data
-infra/          # Templates and scripts for Azure infrastructure
+infra/          # Templates and scripts for Docker and Azure infrastructure
 scripts/        # Utility scripts for document ingestion
 src/            # Source code for the application's services
-|- backend/     # The Chat API
-|- frontend/    # The Chat website
-|- ingestion/   # Service for document ingestion
-package.json    # Configuration for NPM workspace
+├── backend/    # The Chat API developed with Quarkus
+├── frontend/   # The Chat website
+├── ingestion/  # The service for document ingestion developed with Quarkus
+pom.xml         # Main Maven parent POM
 .env            # File that you created for environment variables
 ```
 
-We're using Node.js for our APIs and website, and have set up an [NPM workspace](https://docs.npmjs.com/cli/using-npm/workspaces) to manage dependencies across all projects from a single place. Running `npm install` at the root installs dependencies for all projects, simplifying monorepo management.
+We're using Java and Quarkus for our APIs and Node.js for our website, and have set up a Maven parent POM to manage dependencies across all projects from a single place. Running `mvn install` at the root installs dependencies for all backend projects ( `npm install` for the frontend), simplifying monorepo management.
 
-For instance, `npm run <script_name> --workspaces` executes a script across all projects, while `npm run <script_name> --workspace=backend` targets just the backend.
-
-Otherwise, you can use your regular `npm` commands in any project folder and it will work as usual.
+Otherwise, you can use your regular `mvn` commands in any project folder and it will work as usual.
 
 ### About the services
 
