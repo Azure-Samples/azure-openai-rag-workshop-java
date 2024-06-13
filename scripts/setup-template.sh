@@ -105,9 +105,9 @@ export async function* getChunksFromResponse<T>(response: Response, intervalMs: 
 if [ "$template_name" == "quarkus" ]; then
   echo "Preparing project template for Quarkus..."
 
-  rm -rf src/backend-java-quarkus/src/main/java/ai/azure/openai/rag/workshop/backend/rest/ChatResource.java
-  rm -rf src/backend-java-quarkus/src/main/java/ai/azure/openai/rag/workshop/backend/rest/ChatRequest.java
-  rm -rf src/backend-java-quarkus/src/main/java/ai/azure/openai/rag/workshop/backend/configuration/ChatLanguageModelOllamaProducer.java
+  rm -rf src/backend/src/main/java/ai/azure/openai/rag/workshop/backend/rest/ChatResource.java
+  rm -rf src/backend/src/main/java/ai/azure/openai/rag/workshop/backend/rest/ChatRequest.java
+  rm -rf src/backend/src/main/java/ai/azure/openai/rag/workshop/backend/configuration/ChatLanguageModelOllamaProducer.java
 
   echo -e "package ai.azure.openai.rag.workshop.backend.configuration;
 
@@ -140,7 +140,7 @@ public class ChatLanguageModelAzureOpenAiProducer {
     return null;
   }
 }
-" > src/backend-java-quarkus/src/main/java/ai/azure/openai/rag/workshop/backend/configuration/ChatLanguageModelAzureOpenAiProducer.java
+" > src/backend/src/main/java/ai/azure/openai/rag/workshop/backend/configuration/ChatLanguageModelAzureOpenAiProducer.java
 
   echo -e "package ai.azure.openai.rag.workshop.backend.configuration;
 
@@ -157,7 +157,7 @@ public class EmbeddingModelProducer {
     return null;
   }
 }
-" > src/backend-java-quarkus/src/main/java/ai/azure/openai/rag/workshop/backend/configuration/EmbeddingModelProducer.java
+" > src/backend/src/main/java/ai/azure/openai/rag/workshop/backend/configuration/EmbeddingModelProducer.java
 
   echo -e "package ai.azure.openai.rag.workshop.backend.configuration;
 
@@ -178,13 +178,7 @@ public class EmbeddingStoreProducer {
     return null;
   }
 }
-" > src/backend-java-quarkus/src/main/java/ai/azure/openai/rag/workshop/backend/configuration/EmbeddingStoreProducer.java
-
-  mv src/backend-java-quarkus src/backend
-  rm -rf src/ingestion
-  mv src/ingestion-java-quarkus src/ingestion
-  rm -rf src/backend-* | true
-  rm -rf src/ingestion-* | true
+" > src/backend/src/main/java/ai/azure/openai/rag/workshop/backend/configuration/EmbeddingStoreProducer.java
 
   echo -e "services:
   # backend:

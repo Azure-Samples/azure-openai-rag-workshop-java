@@ -4,7 +4,7 @@ services:
       dockerfile: ./src/backend/Dockerfile
     environment:
       - AZURE_OPENAI_URL=${AZURE_OPENAI_URL}
-      - QDRANT_URL=http://qdrant:6333
+      - QDRANT_URL=http://qdrant:6334
       - LOCAL=true
     ports:
       - 3000:3000
@@ -14,7 +14,7 @@ services:
       dockerfile: ./src/ingestion/Dockerfile
     environment:
       - AZURE_OPENAI_URL=${AZURE_OPENAI_URL}
-      - QDRANT_URL=http://qdrant:6333
+      - QDRANT_URL=http://qdrant:6334
     ports:
       - 3001:3001
 
