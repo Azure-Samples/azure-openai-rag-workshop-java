@@ -25,8 +25,7 @@
   "author": "Microsoft",
   "license": "MIT",
   "workspaces": [
-    "src/frontend",
-    "trainer"
+    "src/frontend"
   ],
   "devDependencies": {
     "prettier": "^3.0.3",
