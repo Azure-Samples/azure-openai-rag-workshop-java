@@ -27,15 +27,11 @@ services:
     project: ./src/backend
     language: java
     host: containerapp
-    docker:
-      context: ../..
 
   ingestion:
     project: ./src/ingestion
     language: java
     host: containerapp
-    docker:
-      context: ../..
 
 hooks:
   postup:
