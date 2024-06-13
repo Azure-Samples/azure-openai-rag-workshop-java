@@ -7,9 +7,9 @@
 set -euo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")/../.."
 
-DOCS_HOME=/tmp/azure-openai-rag-workshop-docs
+DOCS_HOME=/tmp/azure-openai-rag-workshop-java-docs
 GH_USER=$(git config user.name)
-REPO=https://$GH_USER:$GH_TOKEN@github.com/Azure-Samples/azure-openai-rag-workshop.git
+REPO=https://$GH_USER:$GH_TOKEN@github.com/Azure-Samples/azure-openai-rag-workshop-java.git
 
 echo "Preparing all workshop docs..."
 echo "(temp folder: $DOCS_HOME)"
