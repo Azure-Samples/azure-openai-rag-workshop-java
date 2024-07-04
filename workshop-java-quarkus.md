@@ -147,7 +147,7 @@ Before diving into development, let's set up your project environment. This incl
 
 ### Creating your project
 
-1. Open [this GitHub repository](https://github.com/Azure-Samples/azure-openai-rag-workshop)
+1. Open [this GitHub repository](https://github.com/Azure-Samples/azure-openai-rag-workshop-java)
 2. Click the **Fork** button and click on **Create fork** to create a copy of the project in your own GitHub account.
 
 ![Screenshot of GitHub showing the Fork button](./assets/fork-project.png)
