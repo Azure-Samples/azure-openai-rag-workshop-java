@@ -27,7 +27,7 @@ Our application consists of five main components:
 
 4. **Chat Website**: This site offers a ChatGPT-like interface for users to ask questions and receive answers about the ingested documents.
 
-5. **OpenAI Model Deployment**: We will use the `gpt-3.5-turbo` model, hosted on Azure, for this workshop. The code can also be adapted to work with OpenAI's APIs or Ollame with minimal changes.
+5. **OpenAI Model Deployment**: We will use the `gpt-4o-mini` model, hosted on Azure, for this workshop. The code can also be adapted to work with OpenAI's APIs or Ollame with minimal changes.
 
 ### What is Retrievial-Augmented Generation?
 
@@ -37,7 +37,7 @@ At its core, RAG involves two main components:
 
 - **Retriever**: Think "_like a search engine_", finding relevant information from a database. The retriever usually searches in a vector database. It could also - for some use cases - search on application dabases, APIs and other sources of information. In this workshop, we will implement this logic in the _Chat API_.
 
-- **Generator**: Acts like a writer, taking the prompt and information retrieved to craft a response. In this workshop, OpenAI `gpt-3.5-turbo` will be our generator.
+- **Generator**: Acts like a writer, taking the prompt and information retrieved to craft a response. In this workshop, OpenAI `gpt-4o-mini` will be our generator.
 
 ![](./assets/rag.png)
 
