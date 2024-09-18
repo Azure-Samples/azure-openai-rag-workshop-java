@@ -24,7 +24,7 @@
       "value": "${AZURE_SEARCH_SERVICE_SKU=standard}"
     },
     "chatGptDeploymentName": {
-      "value": "${AZURE_OPENAI_CHATGPT_DEPLOYMENT=gpt-35-turbo}"
+      "value": "${AZURE_OPENAI_CHATGPT_DEPLOYMENT=gpt-4o-mini}"
     },
     "indexName": {
       "value": "${INDEX_NAME=kbindex}"

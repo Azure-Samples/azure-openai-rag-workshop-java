@@ -10,7 +10,7 @@ RESOURCE_GROUP="rg-$PROJECT"
 LOCATION="swedencentral"
 TAG="$PROJECT"
 AI_SERVICE="ai-$PROJECT"
-AI_MODEL="gpt-35-turbo"
+AI_MODEL="gpt-4o-mini"
 
 echo "Creating the resource group..."
 echo "------------------------------"
@@ -33,7 +33,7 @@ az cognitiveservices account create \
 # If you want to know the available models, run the following Azure CLI command:
 # az cognitiveservices account list-models --resource-group "$RESOURCE_GROUP" --name "$AI_SERVICE" -o table
 
-echo "Deploying a gpt-35-turbo model..."
+echo "Deploying a gpt-4o-mini model..."
 echo "----------------------"
 az cognitiveservices account deployment create \
   --name "$AI_SERVICE" \

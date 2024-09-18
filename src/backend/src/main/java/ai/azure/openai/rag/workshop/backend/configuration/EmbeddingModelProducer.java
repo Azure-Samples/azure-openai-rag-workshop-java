@@ -1,6 +1,6 @@
 package ai.azure.openai.rag.workshop.backend.configuration;
 
-import dev.langchain4j.model.embedding.AllMiniLmL6V2EmbeddingModel;
+import dev.langchain4j.model.embedding.onnx.allminilml6v2.AllMiniLmL6V2EmbeddingModel;
 import dev.langchain4j.model.embedding.EmbeddingModel;
 import jakarta.enterprise.inject.Produces;
 

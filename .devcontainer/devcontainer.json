@@ -29,7 +29,7 @@
     // "ghcr.io/devcontainers/features/powershell:1": {},
     "ghcr.io/azure/azure-dev/azd:latest": {},
     "ghcr.io/prulloac/devcontainer-features/ollama:1": {
-      "pull": "llama3"
+      "pull": "mistral"
     }
   },
 

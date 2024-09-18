@@ -114,7 +114,7 @@ To use the fallback, add the following code in the catch statement and return th
 > ```
 > 
 > Notice the `@Alternative` annotation. This tells Quarkus that this producer is an alternative to the default one (`ChatLanguageModelAzureOpenAiProducer`). This way, you can switch between the Azure OpenAI and the Ollama model by enabling the `@Alternative` annotation in the properties file (`@Alternative` are not enabled by default).
-> So, if you want to use the Azure OpenAI model, you don't have to configure anything. If instedd you want to use the Ollama model, you will have to add the following property to the `src/backend/src/main/resources/application.properties` file:
+> So, if you want to use the Azure OpenAI model, you don't have to configure anything. If instead you want to use the Ollama model, you will have to add the following property to the `src/backend/src/main/resources/application.properties` file:
 > 
 > ```properties
 > quarkus.arc.selected-alternatives=ai.azure.openai.rag.workshop.backend.configuration.ChatLanguageModelOllamaProducer
