@@ -131,7 +131,7 @@ public class ChatLanguageModelAzureOpenAiProducer {
   @ConfigProperty(name = \"AZURE_OPENAI_URL\")
   String azureOpenAiEndpoint;
 
-  @ConfigProperty(name = \"AZURE_OPENAI_DEPLOYMENT_NAME\", defaultValue = \"gpt-35-turbo\")
+  @ConfigProperty(name = \"AZURE_OPENAI_DEPLOYMENT_NAME\", defaultValue = \"gpt-4o-mini\")
   String azureOpenAiDeploymentName;
 
   @Produces

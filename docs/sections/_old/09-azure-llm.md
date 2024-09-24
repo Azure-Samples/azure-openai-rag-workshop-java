@@ -44,7 +44,7 @@ RESOURCE_GROUP="rg-$PROJECT"
 LOCATION="swedencentral"
 TAG="$PROJECT"
 AI_SERVICE="ai-$PROJECT"
-AI_MODEL="gpt-35-turbo"
+AI_MODEL="gpt-4o-mini"
 ```
 
 #### Creating the resource group
@@ -69,7 +69,7 @@ az cognitiveservices account create \
 --sku "S0"
 ````
 
-#### Deploying a gpt-35-turbo model
+#### Deploying a gpt-4o-mini model
 
 ```shell
 az cognitiveservices account deployment create \
