@@ -88,6 +88,17 @@ To use the fallback, add the following code in the catch statement and return th
 > To use the local Ollama model, you need to create a new chat model producer. At the same location where you've created the `ChatLanguageModelAzureOpenAiProducer`, create a new class called `ChatLanguageModelOllamaProducer` with the following code
 >
 > ```java
+> package ai.azure.openai.rag.workshop.backend.configuration;
+>
+> import dev.langchain4j.model.chat.ChatLanguageModel;
+> import dev.langchain4j.model.ollama.OllamaChatModel;
+> import jakarta.enterprise.inject.Alternative;
+> import jakarta.enterprise.inject.Produces;
+> import static java.time.Duration.ofSeconds;
+> import org.eclipse.microprofile.config.inject.ConfigProperty;
+> import org.slf4j.Logger;
+> import org.slf4j.LoggerFactory;
+> 
 > @Alternative
 > public class ChatLanguageModelOllamaProducer {
 > 
