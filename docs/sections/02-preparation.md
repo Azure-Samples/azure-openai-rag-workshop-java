@@ -83,6 +83,5 @@ java --version
 node --version
 gh --version
 azd version
-gh --version
 bash --version
 ```
