@@ -416,6 +416,13 @@ cd src/backend
 
 This will start the API in development mode, which means it will automatically restart if you make changes to the code.
 
+<div class="important" data-title="Important">
+
+> For configuration, Quarkus uses the @ConfigProperty API. This means that Quarkus will first check for environment variable, and then, the application.properties file.
+> Make sure you don't have your environment variables set, or set to the right value (AZURE_OPENAI_DEPLOYMENT_NAME, AZURE_OPENAI_URL, etc.).
+
+</div>
+
 To test this API, you can either use the [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) extension for VS Code, or a cURL request. Open up a new terminal in and run the following commands:
 
 ```bash
