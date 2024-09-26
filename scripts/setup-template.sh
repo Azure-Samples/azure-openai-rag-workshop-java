@@ -209,7 +209,6 @@ public class EmbeddingStoreProducer {
       - .qdrant:/qdrant/storage:z
 " > docker-compose.yml
 
-  npm install
 else
   echo "Invalid template name. Please use 'quarkus' as the template name."
   echo "Usage: setup-template.sh [quarkus]"
