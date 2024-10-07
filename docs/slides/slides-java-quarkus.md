@@ -15,7 +15,7 @@ background-image: url(images/ai.jpg)
 .full-layer.who.text-right.small.middle.light-text.darkened[
   .ms.responsive[![](images/ms-full-logo.svg)]
   |
-  Sandra, Yohan, Julien
+  Sandra, Antonio, Julien
 ]
 
 ---
@@ -33,11 +33,11 @@ class: center, middle, hide-handle
   .fab.fa-x-twitter[] .e[@sKriemhild]
 ]
 .col-3.center[
-  .w-70.responsive.avatar.bounceInLeft.animated[![](images/yohan.jpg)]
+  .w-70.responsive.avatar.bounceInLeft.animated[![](images/antonio.png)]
 
-  **Yohan Lasorsa**<br>
-  .fab.fa-linkedin[] .e[/yohanlasorsa]<br>
-  .fab.fa-x-twitter[] .e[@sinedied]
+  **Antonio Goncalves**<br>
+  .fab.fa-linkedin[] .e[/agoncal]<br>
+  .fab.fa-x-twitter[] .e[@agoncal]
 ]
 .col-3.center[
   .w-70.responsive.avatar.bounceInUp.animated[![](images/julien.jpg)]
@@ -439,9 +439,10 @@ class: center, middle, big-text
 
 .full-layer.with-margins.right.space-right.noclick[
 <br>
-.w-25.responsive.circle[![](images/chris-dive.jpg)]
+.w-25.responsive.circle[![](images/book-langchain4j.png)]
 ]
 
+- Book [Understanding LangChain4j](https://www.amazon.com/dp/B0DHXGS1LM)
 - [How GPT models work](https://towardsdatascience.com/how-gpt-models-work-b5f4517d5b5)
 - [Practical Deep Learning](https://course.fast.ai/)
 - [OpenAI tokenizer](https://platform.openai.com/tokenizer)
