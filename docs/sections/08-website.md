@@ -18,6 +18,7 @@ As you can see, the project is available in the `src/frontend` folder. From the 
 
 ```bash
 cd src/frontend
+npm install
 npm run dev
 ```
 
