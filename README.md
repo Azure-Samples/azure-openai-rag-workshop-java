@@ -1,7 +1,31 @@
+---
+page_type: sample
+languages:
+- azdeveloper
+- java
+- bicep
+- typescript
+- html
+products:
+- azure
+- azure-openai
+- active-directory
+- azure-container-apps
+- azure-sdks
+- github
+- document-intelligence
+- azure-monitor
+- azure-pipelines
+urlFragment: azure-openai-rag-workshop-java
+name: Azure OpenAI RAG with Java, LangChain4J and Quarkus
+description: A Java sample app that chats with your data using OpenAI.
+---
+<!-- YAML front-matter schema: https://review.learn.microsoft.com/en-us/help/contribute/samples/process/onboarding?branch=main#supported-metadata-fields-for-readmemd -->
+
 <!-- prettier-ignore -->
 <div align="center">
 
-# 🤖 Azure OpenAI RAG workshop - Java version
+# 🤖 Azure OpenAI RAG with Java, LangChain4J and Quarkus
 
 [![Open project in GitHub Codespaces](https://img.shields.io/badge/Codespaces-Open-blue?style=flat-square&logo=github)](https://codespaces.new/Azure-Samples/azure-openai-rag-workshop-java?hide_repo_select=true&ref=main&quickstart=true)
 [![Ollama + Mistral](https://img.shields.io/badge/Ollama-Mistral-ff7000?style=flat-square)](https://ollama.com/library/mistral)
