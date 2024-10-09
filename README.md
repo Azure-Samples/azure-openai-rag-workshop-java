@@ -17,7 +17,8 @@ products:
 - azure-monitor
 - azure-pipelines
 urlFragment: azure-openai-rag-workshop-java
-name: Azure OpenAI RAG with Java, LangChain4j and Quarkus
+
+name: Azure OpenAI RAG with Java, LangChain4J and Quarkus
 description: A Java sample app that chats with your data using OpenAI.
 ---
 <!-- YAML front-matter schema: https://review.learn.microsoft.com/en-us/help/contribute/samples/process/onboarding?branch=main#supported-metadata-fields-for-readmemd -->
