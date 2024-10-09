@@ -167,7 +167,7 @@ And let's finish with configuring the `EmbeddingStoreProducer`, using the Qdrant
 
 ### Creating the Chat API
 
-Now that our data has been ingested, and that our services are configured in Quarkus, it's time to interact with our vector database and an LLM using LnagChain4j. 
+Now that our data has been ingested, and that our services are configured in Quarkus, it's time to interact with our vector database and an LLM using LangChain4j. 
 
 ![ChatResource and dependencies](./assets/class-diagram-rest.png)
 
