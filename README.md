@@ -25,7 +25,7 @@ description: A Java sample app that chats with your data using OpenAI.
 <!-- prettier-ignore -->
 <div align="center">
 
-# 🤖 Azure OpenAI RAG with Java, LangChain4J and Quarkus
+# 🤖 Azure OpenAI RAG with Java, LangChain4j and Quarkus
 
 [![Open project in GitHub Codespaces](https://img.shields.io/badge/Codespaces-Open-blue?style=flat-square&logo=github)](https://codespaces.new/Azure-Samples/azure-openai-rag-workshop-java?hide_repo_select=true&ref=main&quickstart=true)
 [![Ollama + Mistral](https://img.shields.io/badge/Ollama-Mistral-ff7000?style=flat-square)](https://ollama.com/library/mistral)
