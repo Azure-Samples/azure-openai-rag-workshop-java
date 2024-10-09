@@ -37,7 +37,7 @@ description: A Java sample app that chats with your data using OpenAI.
 
 </div>
 
-This sample shows how to build an AI chat experience with Retrieval-Augmented Generation (RAG) using LangChain4J and OpenAI language models. The application is hosted on [Azure Static Web Apps](https://learn.microsoft.com/azure/static-web-apps/overview) and [Azure Container Apps](https://learn.microsoft.com/azure/container-apps/overview), with [Qdrant](https://qdrant.tech/) as the vector database. You can use it as a starting point for building more complex AI applications.
+This sample shows how to build an AI chat experience with Retrieval-Augmented Generation (RAG) using LangChain4j and OpenAI language models. The application is hosted on [Azure Static Web Apps](https://learn.microsoft.com/azure/static-web-apps/overview) and [Azure Container Apps](https://learn.microsoft.com/azure/container-apps/overview), with [Qdrant](https://qdrant.tech/) as the vector database. You can use it as a starting point for building more complex AI applications.
 
 > [!IMPORTANT]
 > 👉 **Follow the [full-length workshop](https://aka.ms/ws/openai-rag-quarkus)** to learn how we built this sample and how you can run and deploy it.
