@@ -14,7 +14,7 @@ We're going to use [Quarkus' Context And Dependency Injection (CDI) mechanism](h
 - The `ai.azure.openai.rag.workshop.backend.configuration.EmbeddingModelProducer` will be responsible for configuring the embedding model.
 - The `ai.azure.openai.rag.workshop.backend.configuration.EmbeddingStoreProducer` will be responsible for configuring the Qdrant embedding store.
 
-As those producers are configured in separate files, and use the LangChain4J API, they can later be switched easily to use other implementations: this will be useful for example to use a more powerful language or embedding model, or for running tests locally.
+As those producers are configured in separate files, and use the LangChain4j API, they can later be switched easily to use other implementations: this will be useful for example to use a more powerful language or embedding model, or for running tests locally.
 
 Let's start by configuring `ChatLanguageModelAzureOpenAiProducer`, using the Azure OpenAI API.
 
@@ -167,7 +167,7 @@ And let's finish with configuring the `EmbeddingStoreProducer`, using the Qdrant
 
 ### Creating the Chat API
 
-Now that our data has been ingested, and that our services are configured in Quarkus, it's time to interact with our vector database and an LLM using LangChain4J. 
+Now that our data has been ingested, and that our services are configured in Quarkus, it's time to interact with our vector database and an LLM using LnagChain4j. 
 
 ![ChatResource and dependencies](./assets/class-diagram-rest.png)
 
