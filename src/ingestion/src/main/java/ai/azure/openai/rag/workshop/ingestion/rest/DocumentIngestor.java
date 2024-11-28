@@ -49,7 +49,7 @@ public class DocumentIngestor {
           List<TextSegment> segments = splitter.split(document);
           for (TextSegment segment : segments) {
             log.debug("# Segment size: {}", segment.text().length());
-            segment.metadata().add("filename", fv.getFileName());
+            segment.metadata().put("filename", fv.getFileName());
           }
           log.debug("# Number of segments: {}", segments.size());
 
