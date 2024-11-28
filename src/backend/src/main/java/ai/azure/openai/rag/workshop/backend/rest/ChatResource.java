@@ -10,6 +10,8 @@ import dev.langchain4j.model.chat.ChatLanguageModel;
 import dev.langchain4j.model.embedding.EmbeddingModel;
 import dev.langchain4j.model.output.Response;
 import dev.langchain4j.store.embedding.EmbeddingMatch;
+import dev.langchain4j.store.embedding.EmbeddingSearchRequest;
+import dev.langchain4j.store.embedding.EmbeddingSearchResult;
 import dev.langchain4j.store.embedding.EmbeddingStore;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
@@ -62,15 +64,17 @@ public class ChatResource {
 
     // Find relevant embeddings from Qdrant based on the user's question
     log.info("### Find relevant embeddings from Qdrant based on the question");
-    List<EmbeddingMatch<TextSegment>> relevant = embeddingStore.findRelevant(embeddedQuestion, 3);
+    EmbeddingSearchResult<TextSegment> relevant = embeddingStore.search(EmbeddingSearchRequest.builder()
+      .queryEmbedding(embeddedQuestion)
+      .build());
 
     // Builds chat history using the relevant embeddings
     log.info("### Builds chat history using the relevant embeddings");
     List<ChatMessage> chatMessages = new ArrayList<>();
     chatMessages.add(SystemMessage.from(SYSTEM_MESSAGE_PROMPT));
     String userMessage = question + "\n\nSources:\n";
-    for (EmbeddingMatch<TextSegment> textSegmentEmbeddingMatch : relevant) {
-      userMessage += textSegmentEmbeddingMatch.embedded().metadata("filename") + ": " + textSegmentEmbeddingMatch.embedded().text() + "\n";
+    for (EmbeddingMatch<TextSegment> textSegmentEmbeddingMatch : relevant.matches()) {
+      userMessage += textSegmentEmbeddingMatch.embedded().metadata().getString("filename") + ": " + textSegmentEmbeddingMatch.embedded().text() + "\n";
     }
     chatMessages.add(UserMessage.from(userMessage));
 
