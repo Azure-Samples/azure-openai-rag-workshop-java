@@ -27,7 +27,7 @@ Document document = pdfParser.parse(fv.getFileItem().getInputStream());
 DocumentSplitter splitter = DocumentSplitters.recursive(2000, 200);
 List<TextSegment> segments = splitter.split(document);
 for (TextSegment segment : segments) {
-  segment.metadata().add("filename", fv.getFileName());
+  segment.metadata().put("filename", fv.getFileName());
 }
 
 // Compute the embeddings
