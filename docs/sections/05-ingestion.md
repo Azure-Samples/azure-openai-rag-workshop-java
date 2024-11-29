@@ -117,7 +117,7 @@ curl -F "file=@./data/privacy-policy.pdf" \
 
 ### Test the vector database
 
-Open the Qdrant dashboard again by opening the following URL in your browser: [http://localhost:6333/dashboard](http://localhost:6333/dashboard).
+Open the Qdrant dashboard again by opening the following URL in your browser: [http://localhost:6333/dashboard#/collections](http://localhost:6333/dashboard#/collections).
 
 <div class="tip" data-title="tip">
 
