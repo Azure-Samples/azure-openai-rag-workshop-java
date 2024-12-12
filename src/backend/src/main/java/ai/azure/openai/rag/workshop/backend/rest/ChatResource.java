@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-@Path("/chat")
+@Path("/api/chat")
 public class ChatResource {
 
   private static final Logger log = LoggerFactory.getLogger(ChatResource.class);
