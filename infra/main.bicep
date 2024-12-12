@@ -46,9 +46,9 @@ param openAiSkuName string = 'S0'
 param frontendLocation string = 'eastus2'
 
 param chatGptDeploymentName string // Set in main.parameters.json
-param chatGptDeploymentCapacity int = 30
+param chatGptDeploymentCapacity int = 8
 param chatGptModelName string = 'gpt-4o-mini'
-param chatGptModelVersion string = '0613'
+param chatGptModelVersion string = '2024-07-18'
 param embeddingDeploymentName string = 'text-embedding-ada-002'
 param embeddingDeploymentCapacity int = 30
 param embeddingModelName string = 'text-embedding-ada-002'
