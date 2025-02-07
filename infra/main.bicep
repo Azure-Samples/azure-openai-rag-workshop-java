@@ -70,8 +70,10 @@ var resourceToken = toLower(uniqueString(subscription().id, environmentName, loc
 var tags = { 'azd-env-name': environmentName }
 var finalOpenAiUrl = empty(openAiUrl) ? 'https://${openAi.outputs.name}.openai.azure.com' : openAiUrl
 var useAzureAISearch = !useQdrant
-var azureSearchService = useAzureAISearch ? searchService.outputs.name : ''
 var qdrantUrl = useQdrant ? (qdrantPort == 6334 ? replace('${qdrant.outputs.uri}:80', 'https', 'http') : '${qdrant.outputs.uri}:443') : ''
+
+var azureSearchService = useQdrant ? '' : 'https://${searchService.outputs.name}.search.windows.net'
+
 
 var ingestionApiIdentityName = '${abbrs.managedIdentityUserAssignedIdentities}ingestion-api-${resourceToken}'
 var backendApiIdentityName = '${abbrs.managedIdentityUserAssignedIdentities}backend-api-${resourceToken}'
